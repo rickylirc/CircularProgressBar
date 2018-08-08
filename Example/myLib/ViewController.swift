@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import myLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let circular = MLProgressBar()
+        present(circular, animated: true, completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
